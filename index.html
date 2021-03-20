@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Weather-App</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+      <link href="src/styles.css" rel="stylesheet" type="text/css" />
+ 
+
+  <br/>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <h1 id="city">
+                  LONDON                </h1>
+                <h2 class="today">
+                  -1°
+                </h2>
+                 <button>
+    Current Location
+  </button>
+              </div>
+              <div class="col day">
+                MON
+              </div>
+              <div class="col day">TUES</div>
+              <div class="col day">WED</div>
+              <div class="col day">THUR</div>
+              <div class="col day">FRI</div>
+            </div>
+             <div class="row">
+              <div class="col-4 current">
+                <h3 class="current">Current forecast and temperature range for the day</h3>
+              </div>
+              <div class="col tempgreen">
+                <h2 class="circlegreen">0° / 3°</h2>
+              </div>
+              <div class="col tempblue">
+                <h2 class="circleblue">-1° / 2°</h2></div>
+              <div class="col temporange"><h2 class="circleorange">4° / 5°</h2></div>
+              <div class="col temppink">
+                <h2 class="circlepink">1° / 4°</h2>
+              </div>
+              <div class="col temppurple"><h2 class="circlepurple">4° / 6°</h2></div>
+              <div class="row">
+                <div class="col-4">
+                     <div class="row g-3 align-items-center">
+  <div class="col-auto">
+  </div>
+  <form class="weather-search-form" id="search-form">
+    <div class="row">
+      <div class="col-9">
+ <input 
+type="search"
+placeholder="Type a city.."
+autofocus="on"
+autocomplete="off"
+id="city-input"
+class="form-control shadow-sm"
+/>
+  </div>
+  <div class="col-3">
+ <input type="submit" value="search"
+ class="form-control btn btn-primary" />
+  </div>
+</div>
+</div>
+  </form>
+  </div>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="src/index.js"></script>
+     </body>
+</html>

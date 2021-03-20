@@ -1,0 +1,91 @@
+.container {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  padding: 20px;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 5px solid #5e35b1;
+  font-family: "Concert One", cursive;
+}
+.col.day {
+  color: blue;
+  font-size: 100%;
+  font-weight: 900;
+}
+.circleblue,
+.circleorange,
+.circlegreen,
+.circlepurple,
+.circlepink {
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  max-height: 95px;
+}
+.circleblue {
+  background: rgba(33, 12, 226, 0.2);
+  border: 3px solid rgba(33, 12, 226);
+}
+.circleorange {
+  background: rgba(231, 127, 9, 0.2);
+  border: 3px solid rgba(231, 129, 9);
+}
+.circlepink {
+  background: rgba(240, 6, 209, 0.2);
+  border: 3px solid rgb(240, 6, 209);
+}
+.circlepurple {
+  background: rgba(152, 8, 236, 0.2);
+  border: 3px solid rgba(152, 8, 236);
+}
+.circlegreen {
+  background: rgba(6, 117, 6, 0.2);
+  border: 3px solid rgba(6, 117, 6);
+}
+.col {
+  text-align: center;
+}
+.form-control {
+  margin: 20px 0 5px 0;
+}
+h2,
+h1 {
+  display: inline;
+}
+h2 {
+  background: rgb(245, 6, 6, 0.2);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 3px solid rgba(245, 6, 6);
+  font-size: 100%;
+  padding: 20px;
+  margin: 0 0 0 25px;
+}
+.col-4.current {
+  background: rgba(6, 212, 226, 0.4);
+  font-size: 75%;
+  border: 3px solid rgb(11, 69, 73);
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  margin: 25px 0 0px 10px;
+  text-align: left;
+}
+.weather-search-form {
+  margin-top: 4px;
+}
+
+button {
+  display: inline;
+  margin: 10px;
+  padding: 0 auto;
+  background: lightgreen;
+}
