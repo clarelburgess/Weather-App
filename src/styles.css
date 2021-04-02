@@ -13,6 +13,9 @@ h1 {
   font-size: 150%;
   text-align: right;
 }
+.col.set {
+  text-align: right;
+}
 
 li {
   list-style: none;
@@ -39,4 +42,13 @@ ul {
     #e3eeff 99%,
     #e3eeff 100%
   );
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active {
+  text-decoration: none;
 }
