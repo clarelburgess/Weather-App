@@ -81,20 +81,23 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+search("Derby");
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#location-search");
-  let h1 = document.querySelector("h1");
   search(cityElement.value);
 }
-let searchBar = document.querySelector("#location-search");
+
+let searchBar = document.querySelector("#search-bar");
 searchBar.addEventListener("submit", handleSubmit);
+
 function cityLocation(position) {
   let lat = position.coords.latitude;
   let long = position.coords.longitude;
   let apiKey = "b5a060fd14db600c2025b09f195f5fa3";
   let units = "metric";
-  apiUrl = `http://api.openweathermap.org/data/2.5//onecall?lat=${lat}&lon=${long}&appid=${apiKey}`;
+  apiUrl = `http://api.openweathermap.org/data/2.5//onecall?lat=${lat}&lon=${long}&units=${units}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayTemperature);
   apiUrl = `http://api.openweathermap.org/data/2.5//onecall?lat=${lat}&lon=${long}&appid=${apiKey}`;
 }
@@ -102,6 +105,9 @@ function handleLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(cityLocation);
 }
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", handleLocation);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
@@ -127,5 +133,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-search("Derby");
