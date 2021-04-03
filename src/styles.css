@@ -2,6 +2,13 @@ h1 {
   color: orangered;
   display: inline;
 }
+
+h4 {
+  padding: 20px;
+  margin: 20px;
+  border: 5px;
+  font-family: "Concert One", cursive;
+}
 .fas.fa-cloud-showers-heavy {
   font-size: 300%;
 }
@@ -15,6 +22,21 @@ h1 {
 }
 .col.set {
   text-align: right;
+}
+.form-inline {
+  align-items: center;
+  display: -webkit-inline-flex;
+}
+.floated-left {
+  align-items: center;
+  font-size: 150%;
+  text-align: center;
+  color: rgb(194, 220, 228);
+  background-color: blue;
+  padding: 1pc;
+}
+.row.md {
+  color: aquamarine;
 }
 
 li {
@@ -30,11 +52,11 @@ ul {
 }
 
 .weather-app {
-  max-width: 600px;
+  max-width: 450px;
   font-family: "Concert One", cursive;
   padding: 20px;
-  margin: 5px auto;
-  border-radius: 10px;
+  margin: 25px auto;
+  border-radius: 50px;
   border: 5px solid #5e35b1;
   background-image: linear-gradient(
     to top,
@@ -51,4 +73,8 @@ ul {
 
 .weather-temperature .active {
   text-decoration: none;
+}
+button {
+  line-height: 10%;
+  margin: 20pc;
 }

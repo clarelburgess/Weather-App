@@ -23,84 +23,101 @@
     <div class="container">
       <div class="weather-app">
         <div class="row">
+         
            <div class="col">
+             
              <i class="far fa-sun"></i>
        <span id="sunrise"></span>
+             
            </div>
+         
             <div class="col">
                     <h1 id="city"></h1>
   </div>
-   <div class="col">
-     <img
-     alt="clear"
-     id="icon"
-     class="float-left"/>
-</div>
+   
  <div class="col set">
       <i class="far fa-moon"></i>
       <span id="sunset" class="settime"></span>
       
       </div>
     </div>
- <div class="row">
-   <div class="col">
 
-       <form id="search-bar" class="form-inline" class="mb-5">
-                    <input class="form-control" type="search" id="location-search" placeholder="Search for a city ..."
-                        aria-label="Location" />
-                    </input>
+
+<div class="row">
+<div class="col-6">
+     <img
+     alt="clear"
+     id="icon"
+     class="float-left"/>
+      <div id="description"></div>
 </div>
-<div class="col">
-                    <button class="submit" type="submit" id="submit-button">
-                      
-                        <i class="fas fa-search"></i>
-                    </button>
-
-                    <button class="current-location" type="click" id="current-location-button">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </button>
-                </form>
-      </div>
-    
-      <ul>
-        <li>
-        <h3 id="date"></h3>
-        </li>
-        <li id="description"></li>
-      </ul>
-      <div class="row">
-        <div class="col-md-6">
+<div class="col-6">
+<h4>
           <div class="clearfix weather-temperature">
     <span id="temperature"></span>
     <span class="units"
     ><a href="#" id="celsius-link" class="active">°C</a> |
 <a href="#" id="fahrenheit-link">°F</a></span>
+</h4>
+      
+</div>
+ </div>
+     <div class="row">
 
-        </div>
-        </div>
-        <div class="col-6">
-<ul>
-  <li>
-    Precipitation: 0%
-    </li>
-    <li>
+  <h3 id="date"  class="floated-left"></h3>
+     </div>
+  
+       
+       
+      
+      <div class="row md">
+       
+    <div class="col">
+       
+
+  
+    <div>
       Humidity: <span id="humidity"></span>%
-    </li>
-    <li>
+    </div>
+    </div>
+      <div class="col">
+    <div>
       Wind: <span id="wind"></span>km/h
     
-  </li>
-</ul>
+    </div>
+    </div>
+<div class="row">
+  
+  
 
-      
-        </div>
-      </div>
+
+       <form id="search-bar" class="form-inline" class="mb-5">
+                    <input class="form-control" type="search" id="location-search" placeholder="Search for a city ..."
+                        aria-label="Location" />
+                    </input>
+ 
+
+ 
+
+                    <button class="submit" type="submit" id="submit-button">
+                      
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+ <button class="current-location" type="click" id="current-location-button">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+
+                 
+                </form>
+
+              </div>
       <small class="Clare">  
       <a href="https://github.com/clarelburgess?tab=repositories" target="_blank">Open-source code</a>
       ", by Clare Burgess"
     </small>
     </div>
-    </div>
+        </div>
   </div>
     <script src="src/index.js"></script>
   </body>
