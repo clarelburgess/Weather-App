@@ -3,12 +3,6 @@ h1 {
   display: inline;
 }
 
-h4 {
-  padding: 20px;
-  margin: 20px;
-  border: 5px;
-  font-family: "Concert One", cursive;
-}
 .fas.fa-cloud-showers-heavy {
   font-size: 300%;
 }
@@ -32,13 +26,24 @@ h4 {
   font-size: 150%;
   text-align: center;
   color: rgb(194, 220, 228);
-  background-color: blue;
+  background-color: #5e35b1;
   padding: 1pc;
 }
-.row.md {
-  color: aquamarine;
-}
+.report {
+  text-align: center;
+  align-content: center;
+  border-radius: 10%;
+  background-color: #11948d;
 
+  margin-bottom: 10%;
+  margin-top: 10%;
+  padding-top: 0%;
+}
+.details {
+  text-align: center;
+  color: orangered;
+  padding: 1pc 1pc 1pc 1pc;
+}
 li {
   list-style: none;
   margin: 0;
@@ -77,4 +82,29 @@ ul {
 button {
   line-height: 10%;
   margin: 20pc;
+}
+h4 {
+  margin-top: 50px;
+  padding: 20px;
+
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Concert One", cursive;
+}
+small {
+  padding-top: 1pc;
+}
+.fahrenheit {
+  font-size: 75%;
+}
+.active {
+  font-size: 75%;
+}
+.temperature {
+  font-size: 200%;
+  margin: 0%;
+}
+.descriptions {
+  padding: 1pc;
+  color: azure;
 }
